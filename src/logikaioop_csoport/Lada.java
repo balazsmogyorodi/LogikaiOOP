@@ -8,6 +8,6 @@ package logikaioop_csoport;
  *
  * @author mogyorodi.balazs
  */
-public class Allitas {
+public class Lada {
     
 }
