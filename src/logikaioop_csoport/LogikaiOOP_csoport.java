@@ -2,7 +2,7 @@ package logikaioop_csoport;
 public class LogikaiOOP_csoport {
     
     public static void main(String[] args) {
-        Allitasok a = new Allitasok();
+        Lada a = new Lada();
         System.out.println("Leírás");
         System.out.println(a);
         System.out.println("Melyik:");
