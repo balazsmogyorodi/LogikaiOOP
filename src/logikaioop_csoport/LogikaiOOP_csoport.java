@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class LogikaiOOP_csoport {
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     
    
@@ -14,6 +15,10 @@ public class LogikaiOOP_csoport {
     public static void main(String[] args) {
         Allitasok a = new Allitasok();
 >>>>>>> fejlesztoi
+=======
+    public static void main(String[] args) {
+        Allitasok a = new Allitasok();
+>>>>>>> 9bfafef0ee05464f7796c28d0b3d8dc574338fde
         System.out.println("Leírás");
         System.out.println(a);
         System.out.println("Melyik:");
