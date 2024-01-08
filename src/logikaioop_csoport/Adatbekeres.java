@@ -33,9 +33,10 @@ public class Adatbekeres {
     }
     
     public void eredmenyKonzolra(){
-    
-    
-    
+        if (isHelyes()){
+          System.out.println("Jó választás");
+        } else{
+            System.out.println("Rossz választás");
+        }
     }
-    
 }
