@@ -8,9 +8,13 @@ package logikaioop_csoport;
 public class Lada {
     private String allitas = "";
     private String anyag = "";
-    private boolean kincs = true;
+    private boolean kincs;
+    
 
-    public Lada() {
+    public Lada(String anyag, String allitas) {
+        this.anyag = anyag;
+        this.allitas = allitas;
+        kincs_e();     
     }
 
     public String getAllitas() {
@@ -31,6 +35,14 @@ public class Lada {
 
     public boolean isKincs() {
         return kincs;
+    }
+    
+    public void kincs_e(){
+        if (allitas == "az arany hazudik"){
+            setKincs(true);
+        } else {
+            setKincs(false);       
+        }
     }
 
     public void setKincs(boolean kincs) {
