@@ -1,5 +1,10 @@
 
+
 package logikaioop_csoport;
+
+
+
+
 public class Lada {
     private String allitas = "";
     private String anyag = "";
