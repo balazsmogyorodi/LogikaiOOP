@@ -4,12 +4,16 @@ import java.util.Scanner;
 
 public class Feladat {
 
+    private Scanner sc = new Scanner(System.in);
     String leiras = "";
     int melyik;
     Lada lada = new Lada();
 
-    public Feladat(int melyik) {
-        this.melyik = melyik;
+    public void run() {
+        MelyikAz();
+        getLeiras();
+        isHelyes();
+        eredmenyKonzolra();
     }
 
     public String getLeiras() {
@@ -19,24 +23,29 @@ public class Feladat {
         leiras += "A válasz jo | rossz";
         leiras += melyik;
 
-        
         return leiras;
     }
 
     public int MelyikAz() {
-        Scanner sc = new Scanner(System.in);
-        melyik = sc.nextInt(1);
-        
+
+        melyik = sc.nextInt();
+
         return melyik;
     }
-    
+
     public boolean isHelyes() {
-        
-        return false;
-        
+        if (melyik == 1) {
+            return true;
+        } else {
+            return false;
+        }
     }
-    
+
     public void eredmenyKonzolra() {
-        
+        if (isHelyes()) {
+            System.out.println("Jó választás");
+        } else {
+            System.out.println("Rossz választás");
+        }
     }
 }
