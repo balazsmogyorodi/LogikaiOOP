@@ -6,35 +6,43 @@ public class Feladat {
 
     private Scanner sc = new Scanner(System.in);
     String leiras = "";
-    int melyik;
-    Lada lada = new Lada();
+    int melyik = 0;
+    Lada bronz = new Lada("arany", "Ebben van a kincs"),
+            ezust = new Lada("ezüst", "Nem ebben van a kincs."),
+            arany = new Lada("bronz", "Az arany hazudik.");
+    Lada[] lada = new Lada[3];
 
     public void run() {
+        lada[0] = bronz;
+        lada[1] = ezust;
+        lada[2] = arany;
+        System.out.print(leiras());
         MelyikAz();
-        getLeiras();
         isHelyes();
         eredmenyKonzolra();
     }
 
-    public String getLeiras() {
-        leiras = "Leírás";
-        leiras += lada;
-        leiras += "Melyik:";
-        leiras += "A válasz jo | rossz";
-        leiras += melyik;
-
+    public String leiras() {
+        leiras = "Kezdödhet a kincs keresés!\n\n";
+        for (int i = 0; i < lada.length; i++) {
+            leiras += lada[i].getAnyag() + "\n";
+            leiras += lada[i].getAllitas() + "\n";
+        }
         return leiras;
     }
 
     public int MelyikAz() {
-
-        melyik = sc.nextInt();
-
+        while (melyik < 1 || melyik > 3) {
+            System.out.print("Válasz a ládák közül! Sorrend alapján 1-től 3-ig: ");
+            melyik = sc.nextInt();
+            System.out.println("");
+        }
+        melyik = melyik - 1;
         return melyik;
     }
 
     public boolean isHelyes() {
-        if (melyik == 1) {
+        if (lada[melyik].getKincs()) {
             return true;
         } else {
             return false;

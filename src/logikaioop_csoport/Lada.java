@@ -16,6 +16,10 @@ public class Lada {
         this.allitas = allitas;
         kincs_e();     
     }
+    
+
+
+  
 
     public String getAllitas() {
         return allitas;
@@ -33,12 +37,12 @@ public class Lada {
         this.anyag = anyag;
     }
 
-    public boolean isKincs() {
+    public boolean getKincs() {
         return kincs;
     }
     
     public void kincs_e(){
-        if (allitas == "az arany hazudik"){
+        if (allitas == "Az arany hazudik."){
             setKincs(true);
         } else {
             setKincs(false);       
