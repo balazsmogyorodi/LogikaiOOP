@@ -1,6 +1,6 @@
 
 
-package logikaioop_csoport;
+package logikaioop_csoport.model;
 
 
 
