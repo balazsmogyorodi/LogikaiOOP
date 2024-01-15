@@ -1,5 +1,6 @@
-package logikaioop_csoport;
+package logikaioop_csoport.controller;
 
+import logikaioop_csoport.model.Lada;
 import java.util.Scanner;
 
 public class Feladat {

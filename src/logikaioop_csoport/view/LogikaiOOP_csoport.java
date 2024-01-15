@@ -1,4 +1,6 @@
-package logikaioop_csoport;
+package logikaioop_csoport.view;
+
+import logikaioop_csoport.controller.Feladat;
 
 public class LogikaiOOP_csoport {
    
