@@ -1,5 +1,5 @@
-
 package logikaioop_csoport.model;
+
 public class Lada {
     private String allitas = "";
     private String anyag = "";
