@@ -26,7 +26,7 @@ public class Feladat {
     public String leiras() {
         leiras = "Kezdödhet a kincs keresés!\n\n";
         for (int i = 0; i < lada.length; i++) {
-            leiras += lada[i].getAnyag() + "\n";
+            leiras += lada[i].getAnyag() + ": ";
             leiras += lada[i].getAllitas() + "\n";
         }
         return leiras;
